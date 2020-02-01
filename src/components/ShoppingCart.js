@@ -18,7 +18,7 @@ const ShoppingCart = () => {
 
   return (
     <div className="shopping-cart">
-			{console.log('Shopping Cart Console', cart)}
+      {console.log("Shopping Cart Console", cart)}
       {cart.map(item => (
         <Item key={item.id} {...item} />
       ))}

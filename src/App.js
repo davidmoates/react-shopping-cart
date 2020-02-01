@@ -21,10 +21,10 @@ function App() {
 
   return (
     <ProductContext.Provider value={{ products, addItem }}>
-      <CartContext.Provider value={cart}>
+      <CartContext.Provider value={{ cart }}>
         <div className="App">
           {console.log("app console", cart)}
-          <Navigation cart={cart} />
+          <Navigation />
 
           {/* Routes */}
           <Route exact path="/" component={Products} />
